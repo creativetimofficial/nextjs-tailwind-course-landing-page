@@ -1,27 +1,29 @@
+import React from "react";
 import Image from "next/image";
 import {
-  Card,
-  CardHeader,
-  CardBody,
   Typography,
+  Card,
+  CardBody,
+  CardHeader,
   Button,
 } from "@material-tailwind/react";
 
-interface ProjectCardProps {
+interface EventCardProps {
   img: string;
   title: string;
   desc: string;
+  buttonLabel: string;
 }
 
-export function ProjectCard({ img, title, desc }: ProjectCardProps) {
+export function EventCard({ img, title, desc, buttonLabel }: EventCardProps) {
   return (
     <Card color="transparent" shadow={false}>
       <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
         <Image
-          src={img}
-          alt={title}
           width={768}
           height={768}
+          src={img}
+          alt={title}
           className="h-full w-full object-cover"
         />
       </CardHeader>
@@ -38,11 +40,11 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           {desc}
         </Typography>
         <Button color="gray" size="sm">
-          see details
+          {buttonLabel}
         </Button>
       </CardBody>
     </Card>
   );
 }
 
-export default ProjectCard;
+export default EventCard;

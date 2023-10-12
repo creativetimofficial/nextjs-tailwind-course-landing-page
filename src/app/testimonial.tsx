@@ -1,94 +1,72 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 
-export function Testimonial() {
-  const [active, setActive] = React.useState(3);
 
+function TESTIMONIAL() {
   return (
-    <section className="py-12 px-8 lg:py-24">
-      <div className="container max-w-screen-lg mx-auto">
-        <div className="container mx-auto mb-20 text-center">
-          <Typography variant="h2" color="blue-gray" className="mb-4">
-            What Clients Say
-          </Typography>
-          <Typography
-            variant="lead"
-            className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
-          >
-            Discover what clients have to say about their experiences working
-            with me. My client&apos;s satisfaction is my greatest achievement!
-          </Typography>
-        </div>
-        <Card color="transparent" shadow={false} className="py-8 lg:flex-row">
-          <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between ">
-            <div className="w-full mb-10 lg:mb-0">
-              <Typography
-                variant="h3"
-                color="blue-gray"
-                className="mb-4 font-bold lg:max-w-xs"
-              >
-                Mobile App Development
-              </Typography>
-              <Typography className="mb-3 w-full lg:w-8/12 font-normal !text-gray-500">
-                I had the pleasure of working with Lily on a critical web
-                development project, and I can confidently say that their
-                expertise and professionalism exceeded my expectations.
-              </Typography>
-              <Typography variant="h6" color="blue-gray" className="mb-0.5">
-                Michael - Technical Manager
-              </Typography>
-              <Typography
-                variant="small"
-                className="font-normal mb-5 !text-gray-500"
-              >
-                Marketing @ APPLE INC.
-              </Typography>
-              <div className="flex items-center gap-4">
-                <Avatar
-                  variant="rounded"
-                  src="/image/avatar1.jpg"
-                  alt="spotify"
-                  size="sm"
-                  className={`cursor-pointer ${
-                    active === 1 ? "opacity-100" : "opacity-50"
-                  }`}
-                  onClick={() => setActive(1)}
-                />
-                <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
-                <Avatar
-                  variant="rounded"
-                  src="/image/avatar2.jpg"
-                  alt="spotify"
-                  size="sm"
-                  className={`cursor-pointer ${
-                    active === 2 ? "opacity-100" : "opacity-50"
-                  }`}
-                  onClick={() => setActive(2)}
-                />
-                <div className="w-[1px] h-[36px] bg-blue-gray-100" />
-                <Avatar
-                  variant="rounded"
-                  src="/image/avatar3.jpg"
-                  alt="spotify"
-                  size="sm"
-                  className={`cursor-pointer ${
-                    active === 3 ? "opacity-100" : "opacity-50"
-                  }`}
-                  onClick={() => setActive(3)}
-                />
-              </div>
-            </div>
-            <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0">
+    <section className="px-8 py-40">
+      <div className="container mx-auto">
+        <Card color="transparent" shadow={false} className="">
+          <CardBody className="col-span-full gap-10 place-items-center overflow-visible grid grid-cols-1 lg:grid-cols-4">
+            <div className="w-full xl:w-[600px] flex items-center overflow-hidden rounded-xl justify-center col-span-2 h-full">
               <Image
                 width={768}
                 height={768}
+                src="/image/blogs/blog6.svg"
                 alt="testimonial image"
-                src={`/image/avatar${active}.jpg`}
-                className="h-full rounded-lg w-full object-cover"
+                className="w-full h-full scale-110 object-cover"
               />
+            </div>
+            <div className="col-span-2 w-full">
+              <Typography variant="h6" color="blue" className="mb-4">
+                ONLINE COURSE
+              </Typography>
+              <Typography
+                variant="h3"
+                color="blue-gray"
+                className="mb-4 font-bold"
+              >
+                Full-Stack Web Development
+              </Typography>
+              <Typography className="mb-1 w-full font-normal !text-gray-500">
+                Become a versatile developer by combining frontend and backend
+                skills. Build complete web applications from start to finish.
+              </Typography>
+              <div className="grid mb-4">
+                <div className="flex items-center gap-2">
+                  <span className="h-1 w-1 bg-gray-500 rounded-full" />
+                  <Typography className="w-full font-normal !text-gray-500">
+                    International course collection in 10 languages
+                  </Typography>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="h-1 w-1 bg-gray-500 rounded-full" />
+                  <Typography className="w-full font-normal !text-gray-500">
+                    Certified include
+                  </Typography>
+                </div>
+              </div>
+              <div className="flex items-center mt-8 gap-4">
+                <Avatar
+                  variant="circular"
+                  src="/image/avatar3.jpg"
+                  alt="spotify"
+                  size="md"
+                />
+                <div>
+                  <Typography variant="h6" color="blue-gray" className="mb-0.5">
+                    Otto Gonzalez
+                  </Typography>
+                  <Typography
+                    variant="small"
+                    className="font-normal !text-gray-500"
+                  >
+                    Senior Designer @company.com
+                  </Typography>
+                </div>
+              </div>
             </div>
           </CardBody>
         </Card>
@@ -97,4 +75,4 @@ export function Testimonial() {
   );
 }
 
-export default Testimonial;
+export default TESTIMONIAL;

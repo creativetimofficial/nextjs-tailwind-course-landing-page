@@ -1,5 +1,5 @@
 {
-  "name": "mt-portfolio-page",
+  "name": "mt-campaign-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -25,5 +25,17 @@
     "postcss": "^8",
     "tailwindcss": "^3",
     "typescript": "^5"
-  }
+  },
+  "description": "## Quick Start",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decipheron/material-tailwind-react-portfolio-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decipheron/material-tailwind-react-portfolio-template/issues"
+  },
+  "homepage": "https://github.com/decipheron/material-tailwind-react-portfolio-template#readme"
 }
