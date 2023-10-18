@@ -1,12 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Button,
-  Typography,
-  Card,
-  CardBody,
-} from "@material-tailwind/react";
+import { Button, Typography, Card, CardBody } from "@material-tailwind/react";
 
 import {
   GlobeEuropeAfricaIcon,
@@ -17,28 +12,27 @@ import {
 
 import CategoryCard from "@/components/category-card";
 
-
 const CATEGORIES = [
   {
-    img: "/image/blogs/blog-3.png",
+    img: "/nextjs-tailwind-course-landing-page/image/blogs/blog-3.png",
     icon: HeartIcon,
     title: "Frontend Web Development",
     desc: "300 Courses",
   },
   {
-    img: "/image/blogs/blog-12.jpeg",
+    img: "/nextjs-tailwind-course-landing-page/image/blogs/blog-12.jpeg",
     icon: PuzzlePieceIcon,
     title: "Backend Web Development",
     desc: "200 Courses",
   },
   {
-    img: "/image/blogs/blog-10.jpeg",
+    img: "/nextjs-tailwind-course-landing-page/image/blogs/blog-10.jpeg",
     icon: GlobeEuropeAfricaIcon,
     title: "Web Security & Performance",
     desc: "240 Courses",
   },
   {
-    img: "/image/blogs/blog-13.png",
+    img: "/nextjs-tailwind-course-landing-page/image/blogs/blog-13.png",
     icon: MicrophoneIcon,
     title: "Full-Stack Web Development",
     desc: "100 Courses",

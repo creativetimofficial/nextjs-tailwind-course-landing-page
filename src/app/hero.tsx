@@ -9,7 +9,7 @@ function Hero() {
       <Image
         width={1200}
         height={1200}
-        src="/image/image8.svg"
+        src="/nextjs-tailwind-course-landing-page/image/image8.svg"
         alt="bg-img"
         className="absolute inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center"
       />
@@ -39,28 +39,28 @@ function Hero() {
                 width={144}
                 height={144}
                 className="w-36 grayscale opacity-60"
-                src="/logos/logo-pinterest.svg"
+                src="/nextjs-tailwind-course-landing-page/logos/logo-pinterest.svg"
                 alt="pinterest"
               />
               <Image
                 width={144}
                 height={144}
                 className="w-36 grayscale opacity-60"
-                src="/logos/logo-netflix.svg"
+                src="/nextjs-tailwind-course-landing-page/logos/logo-netflix.svg"
                 alt="netflix"
               />
               <Image
                 width={144}
                 height={144}
                 className="w-36 grayscale opacity-60"
-                src="/logos/logo-coinbase.svg"
+                src="/nextjs-tailwind-course-landing-page/logos/logo-coinbase.svg"
                 alt="coinbase"
               />
               <Image
                 width={144}
                 height={144}
                 className="w-36 grayscale opacity-60"
-                src="/logos/logo-google.svg"
+                src="/nextjs-tailwind-course-landing-page/logos/logo-google.svg"
                 alt="google"
               />
             </div>

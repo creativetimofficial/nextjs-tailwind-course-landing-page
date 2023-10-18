@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 
-
 function TESTIMONIAL() {
   return (
     <section className="px-8 py-40">
@@ -14,7 +13,7 @@ function TESTIMONIAL() {
               <Image
                 width={768}
                 height={768}
-                src="/image/blogs/blog6.svg"
+                src="/nextjs-tailwind-course-landing-page/image/blogs/blog6.svg"
                 alt="testimonial image"
                 className="w-full h-full scale-110 object-cover"
               />
@@ -51,7 +50,7 @@ function TESTIMONIAL() {
               <div className="flex items-center mt-8 gap-4">
                 <Avatar
                   variant="circular"
-                  src="/image/avatar3.jpg"
+                  src="/nextjs-tailwind-course-landing-page/image/avatar3.jpg"
                   alt="spotify"
                   size="md"
                 />

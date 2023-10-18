@@ -1,30 +1,36 @@
 "use client";
 
 import React from "react";
-import { Typography, Card, CardBody, CardHeader, Button } from "@material-tailwind/react";
+import {
+  Typography,
+  Card,
+  CardBody,
+  CardHeader,
+  Button,
+} from "@material-tailwind/react";
 import EventCard from "@/components/event-card";
 
 const EVENTS = [
   {
-    img: "/image/blogs/blog-1.svg",
+    img: "/nextjs-tailwind-course-landing-page/image/blogs/blog-1.svg",
     title: "Future of Web Development: Trends and Innovations",
     desc: "Discover the latest trends and innovations shaping the future of web development.",
     buttonLabel: "register for free",
   },
   {
-    img: "/image/blogs/blog2.svg",
+    img: "/nextjs-tailwind-course-landing-page/image/blogs/blog2.svg",
     title: "WebDev Pro Code-a-Thon: Build a Responsive Website",
     desc: "Participants will have 48 hours to create a responsive website from scratch using HTML, CSS, and JavaScript.",
     buttonLabel: "register for free",
   },
   {
-    img: "/image/blogs/blog3.svg",
+    img: "/nextjs-tailwind-course-landing-page/image/blogs/blog3.svg",
     title: "Ask the Experts: Frontend Web Development",
     desc: "Join our live Q&A session with our experienced instructors. Get answers to your queries, insights into best practices.",
     buttonLabel: "get ticket",
   },
   {
-    img: "/image/blogs/blog4.svg",
+    img: "/nextjs-tailwind-course-landing-page/image/blogs/blog4.svg",
     title: "Web Accessibility: Building Inclusive Websites",
     desc: "Industry experts will discuss the importance of inclusive design and share strategies for creating websites.",
     buttonLabel: "get ticket",
@@ -54,6 +60,5 @@ export function Events() {
     </section>
   );
 }
-
 
 export default Events;

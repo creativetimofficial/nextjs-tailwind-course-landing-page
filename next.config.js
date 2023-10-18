@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
+  assetPrefix: "/nextjs-tailwind-course-landing-page/",
+  basePath: "/nextjs-tailwind-course-landing-page",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
