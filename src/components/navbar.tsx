@@ -25,11 +25,6 @@ const NAV_MENU = [
     icon: UserCircleIcon,
   },
   {
-    name: "Blocks",
-    icon: Squares2X2Icon,
-    href: "https://www.materila-tailwind.com/blocks",
-  },
-  {
     name: "Docs",
     icon: CommandLineIcon,
     href: "https://www.material-tailwind.com/docs/react/installation",
@@ -94,7 +89,12 @@ export function Navbar() {
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
               <Button variant="text">Log in</Button>
-              <Button color="gray">buy now</Button>
+              <a
+                href="https://www.materila-tailwind.com/blocks"
+                target="_blank"
+              >
+                <Button color="gray">Blocks</Button>
+              </a>
             </div>
             <IconButton
               variant="text"
@@ -121,7 +121,12 @@ export function Navbar() {
               </ul>
               <div className="mt-6 mb-4 flex items-center gap-4">
                 <Button variant="text">Log in</Button>
-                <Button color="gray">buy now</Button>
+                <a
+                  href="https://www.materila-tailwind.com/blocks"
+                  target="_blank"
+                >
+                  <Button color="gray">buy now</Button>
+                </a>
               </div>
             </div>
           </Collapse>
