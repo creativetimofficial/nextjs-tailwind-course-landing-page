@@ -125,7 +125,7 @@ export function Navbar() {
                   href="https://www.materila-tailwind.com/blocks"
                   target="_blank"
                 >
-                  <Button color="gray">buy now</Button>
+                  <Button color="gray">blocks</Button>
                 </a>
               </div>
             </div>
