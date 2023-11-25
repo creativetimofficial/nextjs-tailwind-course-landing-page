@@ -90,7 +90,7 @@ export function Navbar() {
             <div className="hidden items-center gap-4 lg:flex">
               <Button variant="text">Log in</Button>
               <a
-                href="https://www.materila-tailwind.com/blocks"
+                href="https://www.material-tailwind.com/blocks"
                 target="_blank"
               >
                 <Button color="gray">Blocks</Button>
@@ -122,7 +122,7 @@ export function Navbar() {
               <div className="mt-6 mb-4 flex items-center gap-4">
                 <Button variant="text">Log in</Button>
                 <a
-                  href="https://www.materila-tailwind.com/blocks"
+                  href="https://www.material-tailwind.com/blocks"
                   target="_blank"
                 >
                   <Button color="gray">blocks</Button>
